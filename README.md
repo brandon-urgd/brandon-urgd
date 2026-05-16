@@ -1,4 +1,4 @@
-# Hey, I'm Brandon 👋
+# Hey, I'm Brandon 👋🏾
 
 I build serverless applications on AWS. Owner of [ur/gd Studios](https://urgdstudios.com) — a creative technology studio focused on calm, well-architected tools.
 
