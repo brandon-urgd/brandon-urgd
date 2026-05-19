@@ -21,6 +21,15 @@ Multi-tenant SaaS that turns documents into AI-guided feedback sessions. Upload 
 - Stripe billing, EventBridge scheduling, X-Ray tracing, 9 CloudWatch alarms
 - Semgrep + Checkov security scanning, WAF protection
 
+### [Chronicle](https://github.com/brandon-urgd/chronicle) — Professional Narrative System
+
+Native desktop app that captures daily work, organizes it under programs and goals, and generates leadership-ready reports. Built for program managers who need structured exports at review time.
+
+- React 19 + TypeScript frontend, Rust backend (axum 0.7, tokio, rusqlite)
+- Single-binary Tauri desktop app — sub-second startup, ~6 MB installer
+- ~95 API routes, SQLite with WAL mode (21 tables), PDF export
+- MCP server for AI-assisted reporting and weekly update generation
+
 ### [Stitch](https://github.com/brandon-urgd/stitch) — SVG to Embroidery Converter
 
 Production web app that converts SVG files to PES embroidery format. Live at [stitch.urgdstudios.com](https://stitch.urgdstudios.com).
@@ -28,15 +37,6 @@ Production web app that converts SVG files to PES embroidery format. Live at [st
 - Event-driven architecture: presigned URL upload → GuardDuty malware scan → Lambda conversion → status polling
 - CloudFront + S3 hosting, API Gateway, DynamoDB status tracking
 - Zero-touch security — infected files never reach application compute
-
-### Chronicle — Professional Narrative System
-
-*Coming soon.* Local-first productivity tool that captures daily work, links entries to SMART goals, and generates structured reports for leadership updates and self-reviews.
-
-- React 19 + TypeScript + Vite (10 views)
-- Python FastAPI, 75+ API routes, SQLite (20 tables)
-- 350+ tests including property-based testing
-- MCP server for AI-assisted reporting
 
 ### [urgdstudios.com](https://github.com/brandon-urgd/urgdstudios.com) — Studio Website
 
@@ -54,6 +54,7 @@ Company website with React 19 SSR pre-rendering, CloudFront + S3 hosting, Lambda
 **IaC:** CloudFormation (sole IaC — no Terraform, no CDK)  
 **CI/CD:** GitHub Actions with OIDC, multi-environment promotion  
 **Frontend:** React 19, TypeScript, Vite, CSS Modules  
+**Desktop:** Tauri, Rust (axum, tokio, serde, rusqlite)  
 **Monitoring:** CloudWatch (alarms, dashboards, metrics), X-Ray, SNS alerting  
 
 ---
